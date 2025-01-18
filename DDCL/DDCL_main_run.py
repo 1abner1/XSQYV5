@@ -45,7 +45,7 @@ def train(episode, max_episodes):
     print(f"Episode {episode} | Avg Reward: {avg_reward:.2f} | Episode Length: {episode_length} | Loss: {loss:.4f}")
 
 
-def play_gif_and_train(max_episodes, scene):
+def play_train(max_episodes, scene):
     # 获取GIF路径
     gif_path = get_gif_path(scene)
 
@@ -103,4 +103,4 @@ if __name__ == "__main__":
     args = parse_args()
 
     # 调用播放GIF并训练的函数
-    play_gif_and_train(args.max_episode, args.scene)
+    play_train(args.max_episode, args.scene)
