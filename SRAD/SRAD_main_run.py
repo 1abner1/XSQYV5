@@ -68,7 +68,7 @@ def play_train(max_episodes, scene):
             frame_bgr = np.array(frame.convert("RGB"))
             frame_bgr = cv2.cvtColor(frame_bgr, cv2.COLOR_RGB2BGR)
 
-            cv2.imshow('Playback', frame_bgr)
+            cv2.imshow('run', frame_bgr)
 
             # 调用训练过程
             train(episode, max_episodes)
